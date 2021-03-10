@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --black: #222222;
+    --yellow: #FEEE00;
+    --white: #FFFFFF;
+}
+
+/* Global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 93.75%;
+    min-height: 100vh;
+}
+body {
+    background: var(--black);
+
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* Links, text and buttons */
+
+a, a:active, a:visited {
+    color: var(--white);
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.arrow-icon {
+    font-size: 2rem;
+    color: var(--yellow);
+}
+
+.social-icon {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+/* Containers & Flex */
+
+.overflow-wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.full-height {
+    min-height: 100vh;
+}
+
+.flex-y {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-x {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Header */
+
+header {
+    margin: 3rem 0;
+}
+
+header.profile-header {
+    margin: 3rem 0 0 0;
+}
+
+.logo {
+    max-height: 4rem;
+}
+
+.icon {
+    max-width: 8rem;
+
+    margin-top: 2.5rem;
+}
+
+.profile-picture {
+    max-width: 33%;
+    border-radius: 1rem;
+}
+
+/* Cards */
+
+.card {
+    padding: 2rem 1rem;
+    text-align: center;
+    border: solid 1px var(--yellow);
+    border-radius: .5rem;
+}
+
+#card-about {
+    background: var(--yellow);
+    display: inline-block;
+    width: 100%;
+}
+#card-about a {
+    color: var(--black);
+}
+
+#card-about.bio {
+    background: var(--black);
+
+    padding: 2.5rem 1rem;
+
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+#card-about.bio p {
+    margin-top: 1rem;
+}
+
+.separator-y {
+    display: block;
+    margin: 0 auto;
+    min-height: 3rem;
+    height: 100%;
+    width: 0;
+    border-right: solid 1px var(--yellow);
+}
+
+.separator-x {
+    position: absolute;
+    display: inline-block;
+    min-width: 50%;
+    border-bottom: solid 1px var(--yellow);
+}
+
+/* Footer */
+
+footer {
+    margin: 1rem 0;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+footer p b {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
