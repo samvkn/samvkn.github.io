@@ -180,7 +180,9 @@ footer p b {
     html {
         font-size: 87.5%;
     }
-
+    header {
+        margin: 1rem 0;
+    }
     #card-about span {
         display: none;
     }
